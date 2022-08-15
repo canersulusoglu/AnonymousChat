@@ -25,7 +25,7 @@ A simple realtime chat application which users join only enter their nicknames a
 ### Start With Docker
  - Run `docker-compose up` command on terminal in directory which has `docker-compose.yml` file.
 
-## Using Techs
+## Used Techs
 
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
 ![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
