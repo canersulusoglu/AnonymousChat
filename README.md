@@ -3,10 +3,10 @@
 A simple realtime chat application which users join only enter their nicknames and see messages that are people writing. 
 
 ## Screenshots
-![1](https://i.im.ge/2022/08/15/OunOqM.Screenshot-1.png)
-![2](https://i.im.ge/2022/08/15/Ounrx8.Screenshot-2.png)
-![3](https://i.im.ge/2022/08/15/OunlLX.Screenshot-3.png)
-![4](https://i.im.ge/2022/08/15/Oununh.Screenshot-4.png)
+![1](./Screenshots/Screenshot_1.png)
+![2](./Screenshots/Screenshot_2.png)
+![3](./Screenshots/Screenshot_3.png)
+![4](./Screenshots/Screenshot_4.png)
 
 ## Commands
 
