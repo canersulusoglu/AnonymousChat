@@ -1,0 +1,19 @@
+type Message {
+    message: String!
+    timestamp: String!
+    userId: ID!
+    user: User!
+}
+
+input CreateMessageInput {
+    message: String!
+    userId: ID!
+}
+
+type Mutation {
+    createMessage(data: CreateMessageInput!) : Boolean!
+}
+
+type Subscription {
+    messageCreated: Message!
+}

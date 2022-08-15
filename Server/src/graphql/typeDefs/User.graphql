@@ -1,0 +1,22 @@
+type User {
+    id: ID!
+    nickname: String!
+}
+
+input CreateUserInput {
+    nickname: String!
+}
+
+type Query {
+    user(id: ID!) : User!
+    usersCount : Int!
+}
+
+type Mutation {
+    createUser(data: CreateUserInput!) : User!
+    deleteUser(id: ID!) : Boolean!
+}
+
+type Subscription {
+    userCount: Int!
+}

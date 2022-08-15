@@ -1,0 +1,30 @@
+version: '3.4'
+services:
+  anonymous-chat-server:
+    container_name: AnonymousChat_App_Server
+    build:
+      context: ./Server
+    ports:
+      - ${ANONYMOUS_CHAT_SERVER_PORT}:${ANONYMOUS_CHAT_SERVER_PORT}
+    environment:
+      - PORT=${ANONYMOUS_CHAT_SERVER_PORT}
+      - REDIS_DOMAIN_NAME=redis-pubsub-server
+      - REDIS_PORT=${ANONYMOUS_CHAT_REDIS_PUBSUB_PORT}
+    depends_on:
+      - redis-pubsub-server
+  anonymous-chat-client:
+    container_name: AnonymousChat_App_Client
+    build:
+      context: ./Client
+    ports:
+      - ${ANONYMOUS_CHAT_CLIENT_PORT}:${ANONYMOUS_CHAT_CLIENT_PORT}
+    environment:
+      - PORT=${ANONYMOUS_CHAT_CLIENT_PORT}
+    depends_on:
+      - anonymous-chat-server
+  redis-pubsub-server:
+    container_name: AnonymousChat_App_Redis_PubSub
+    image: redis:7-bullseye
+    restart: always
+    ports:
+      - '6379:6379'

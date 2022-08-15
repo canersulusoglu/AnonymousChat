@@ -1,0 +1,11 @@
+Dockerfile
+.dockerignore
+# Logs
+logs
+*.log
+# Dependency directory
+node_modules
+# Runtime data
+pids
+*.pid
+*.seed

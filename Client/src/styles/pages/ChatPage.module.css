@@ -1,0 +1,7 @@
+.messagesBody{
+    height: calc(100vh - 300px);
+    margin: 10px 0;
+    overflow-y: scroll;
+    flex-direction: column-reverse;
+    display: flex;
+}
